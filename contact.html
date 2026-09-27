@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — GS Solutions</title>
+<meta name="description" content="Contactez GS Solutions à Dakar pour un devis gratuit : création web, design graphique, data et maintenance.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="GS Solutions">GS Solutions</a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html#devis" class="btn btn-primary btn-nav">Demander un devis</a>
+    <button class="menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="wrap">
+    <div class="pb-eyebrow">Parlons de votre projet</div>
+    <h1>Contact</h1>
+    <p>Un projet, une question, un devis ? Nous répondons sous 48h, sans engagement.</p>
+  </div>
+</section>
+
+<section id="devis">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-form">
+          <h2 style="font-size:23px;margin-bottom:8px;">Demander un devis gratuit</h2>
+          <p style="color:var(--ink-soft);font-size:14.5px;margin-bottom:28px;">Remplissez ce formulaire, nous revenons vers vous sous 48h avec une proposition adaptée.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="nom">Nom complet *</label>
+                <input type="text" id="nom" required placeholder="Votre nom et prénom">
+                <div class="error-msg">Ce champ est requis</div>
+              </div>
+              <div class="field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required placeholder="vous@exemple.com">
+                <div class="error-msg">Ce champ est requis</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="tel">Téléphone / WhatsApp</label>
+                <input type="tel" id="tel" placeholder="+221 76 230 91 53">
+              </div>
+              <div class="field">
+                <label for="entreprise">Entreprise / Organisation</label>
+                <input type="text" id="entreprise" placeholder="Nom de votre structure">
+              </div>
+            </div>
+            <div class="field">
+              <label for="type">Service souhaité *</label>
+              <select id="type" required>
+                <option value="">Sélectionner le service</option>
+                <option>Sites web &amp; Portfolios</option>
+                <option>E-commerce</option>
+                <option>Applications &amp; Systèmes de gestion</option>
+                <option>Logo &amp; Identité visuelle</option>
+                <option>Affiches &amp; Flyers</option>
+                <option>Cartes de visite</option>
+                <option>Autre / Sur mesure</option>
+              </select>
+              <div class="error-msg">Ce champ est requis</div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="budget">Budget indicatif</label>
+                <select id="budget">
+                  <option value="">Sélectionner</option>
+                  <option>Moins de 50 000 FCFA</option>
+                  <option>50 000 – 150 000 FCFA</option>
+                  <option>150 000 – 500 000 FCFA</option>
+                  <option>Plus de 500 000 FCFA</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="delai">Délai souhaité</label>
+                <select id="delai">
+                  <option value="">Sélectionner</option>
+                  <option>Urgent (moins de 2 semaines)</option>
+                  <option>1 mois</option>
+                  <option>2 à 3 mois</option>
+                  <option>Pas de contrainte</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Décrivez votre projet *</label>
+              <textarea id="message" required placeholder="Décrivez votre besoin, vos objectifs, votre délai souhaité..."></textarea>
+              <div class="error-msg">Ce champ est requis</div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Envoyer ma demande</button>
+          </form>
+          <div id="formSuccess" style="display:none;text-align:center;padding:48px 0;">
+            <div style="width:68px;height:68px;border-radius:50%;background:var(--teal-soft);color:var(--teal);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:30px;"><i class="fa-solid fa-check"></i></div>
+            <h3 style="color:var(--teal);margin-bottom:12px;">Demande envoyée !</h3>
+            <p style="color:var(--ink-soft);font-size:14.5px;max-width:380px;margin:0 auto;">Merci pour votre message. Nous revenons vers vous sous 48h avec un premier retour ou un devis détaillé.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="contact-info-card">
+          <h3>Nos coordonnées</h3>
+          <div class="ci-row"><div class="ci-icon"><i class="fa-solid fa-envelope"></i></div><div><h5>Email</h5><p>contact@gssolutions.sn</p></div></div>
+          <div class="ci-row"><div class="ci-icon"><i class="fa-solid fa-phone"></i></div><div><h5>Téléphone / WhatsApp</h5><p>+221 76 230 91 53</p></div></div>
+          <div class="ci-row"><div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div><div><h5>Localisation</h5><p>Dakar, Sénégal</p></div></div>
+          <div class="ci-row"><div class="ci-icon"><i class="fa-solid fa-clock"></i></div><div><h5>Disponibilité</h5><p>Lun – Sam, 8h – 18h</p></div></div>
+          <div class="social-links">
+            <a href="https://www.tiktok.com/@gssolutions4?_r=1&_t=ZS-99oIlRvjX08" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/gss.olutions" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61594052957727" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div style="margin-top:26px;padding:28px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);">
+          <h4 style="font-size:16px;margin-bottom:14px;"><i class="fa-solid fa-circle-info" style="color:var(--orange);margin-right:8px;"></i>Bon à savoir</h4>
+          <ul style="font-size:13.8px;color:var(--ink-soft);line-height:1.8;">
+            <li style="padding:4px 0;"><i class="fa-solid fa-check" style="color:var(--teal);font-size:11px;margin-right:9px;"></i>Devis gratuit et sans engagement</li>
+            <li style="padding:4px 0;"><i class="fa-solid fa-check" style="color:var(--teal);font-size:11px;margin-right:9px;"></i>Réponse garantie sous 48h</li>
+            <li style="padding:4px 0;"><i class="fa-solid fa-check" style="color:var(--teal);font-size:11px;margin-right:9px;"></i>Paiement échelonné possible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head centered reveal">
+      <div class="eyebrow">Questions fréquentes</div>
+      <h2>Vous vous demandez peut-être…</h2>
+    </div>
+    <div class="grid-2" style="max-width:940px;margin:0 auto;">
+      <div class="value-card reveal reveal-delay-1"><div class="vc-icon"><i class="fa-solid fa-clock"></i></div><div><h4>Combien de temps pour un projet ?</h4><p>Un site vitrine prend 1 à 3 semaines, une identité visuelle 1 à 2 semaines, une application métier 1 à 3 mois selon la complexité.</p></div></div>
+      <div class="value-card reveal reveal-delay-2"><div class="vc-icon"><i class="fa-solid fa-wallet"></i></div><div><h4>Comment sont fixés les tarifs ?</h4><p>Chaque devis est établi selon le périmètre réel du projet. Nous proposons des tarifs adaptés au marché sénégalais.</p></div></div>
+      <div class="value-card reveal reveal-delay-3"><div class="vc-icon"><i class="fa-solid fa-layer-group"></i></div><div><h4>Puis-je combiner plusieurs services ?</h4><p>Absolument. Nous pouvons associer création web, identité visuelle, maintenance et tableaux de bord selon votre projet.</p></div></div>
+      <div class="value-card reveal"><div class="vc-icon"><i class="fa-solid fa-headset"></i></div><div><h4>Y a-t-il un suivi après livraison ?</h4><p>Oui. Nous proposons des formules de maintenance, de support et de formation pour vous rendre autonome.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="GS Solutions"><span>GS Solutions</span></a>
+        <p class="footer-desc">Votre partenaire numérique à Dakar. Nous concevons des solutions web, des identités visuelles et des outils de pilotage sur mesure.</p>
+        <div class="social-links" style="margin-top:22px;">
+          <a href="https://www.tiktok.com/@gssolutions4?_r=1&_t=ZS-99oIlRvjX08" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/gss.olutions" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61594052957727" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="services.html">Sites web &amp; Portfolios</a>
+        <a href="services.html">E-commerce</a>
+        <a href="services.html">Applications &amp; Systèmes de gestion</a>
+        <a href="services.html">Identité visuelle &amp; Supports</a>
+        <a href="contact.html#devis">Demander un devis</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="mailto:contact@gssolutions.sn">contact@gssolutions.sn</a>
+        <a href="tel:+221762309153">+221 76 230 91 53</a>
+        <a href="#">Dakar, Sénégal</a>
+        <a href="#">Lun – Sam, 8h – 18h</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 GS Solutions. Tous droits réservés.</span>
+      <span>Conçu à Dakar, Sénégal</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
